@@ -1,0 +1,19 @@
+{
+  "name": "coffee_ssk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/naritana/ssk_coffee.git"
+  },
+  "author": "ssk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/naritana/ssk_coffee/issues"
+  },
+  "homepage": "https://github.com/naritana/ssk_coffee#readme"
+}
