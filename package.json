@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development"
+    "dev": "webpack-dev-server --mode development",
+    "lint": "eslint --ext .js,.ts,.vue src/",
+    "fix": "eslint --fix --ext .js,.ts,.vue src/"
   },
   "repository": {
     "type": "git",
@@ -23,15 +25,20 @@
     "vuetify": "^1.0.8"
   },
   "devDependencies": {
-    "css-loader": "^0.28.10",
-    "dev-server": "0.0.2",
+    "css-loader": "^0.28.11",
+    "eslint": "^4.19.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-typescript": "^0.10.0",
+    "eslint-plugin-vue": "^4.3.0",
+    "prettier": "^1.11.1",
     "source-map-loader": "^0.2.3",
     "style-loader": "^0.20.3",
-    "ts-loader": "^4.0.1",
-    "tslint": "^5.9.1",
-    "tslint-loader": "^3.6.0",
+    "ts-loader": "^4.1.0",
     "typescript": "^2.7.1",
+    "typescript-eslint-parser": "^14.0.0",
     "url-loader": "^1.0.1",
+    "vue-eslint-parser": "^2.0.3",
     "vue-loader": "^14.2.1",
     "vue-template-compiler": "^2.5.16",
     "vue-template-loader": "^0.4.1",

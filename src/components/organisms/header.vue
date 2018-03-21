@@ -1,23 +1,25 @@
 <template>
-    <v-toolbar dark fixed app>
-      <v-toolbar-side-icon @click.stop="clicked()"></v-toolbar-side-icon>
-      <v-toolbar-title>Application</v-toolbar-title>
-    </v-toolbar>
+  <v-toolbar 
+    fixed 
+    app 
+    dark>
+    <v-toolbar-side-icon @click.stop="clickedListIcon()"/>
+    <v-toolbar-title>Application</v-toolbar-title>
+  </v-toolbar>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import Store from '../../store';
+import Vue from 'vue'
+import store from '../../store'
 
 export default Vue.extend({
-    data: () => ({
-        drawer: false
-    }),
-    methods: {
-        clicked() {
-            this.drawer = !this.drawer;
-            Store.$emit('toolbarIcon', this.drawer );
-        }
+  data() {
+    return {}
+  },
+  methods: {
+    clickedListIcon() {
+      store.$emit('notifyListStateTransition')
     }
-});
+  }
+})
 </script>

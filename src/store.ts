@@ -1,4 +1,4 @@
-import Vue from 'vue';
+import Vue from 'vue'
 
-let Store = new Vue();
-export default Store;
+let Store = new Vue()
+export default Store
